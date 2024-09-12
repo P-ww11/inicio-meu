@@ -1,0 +1,1 @@
+//promise.all() e promise.race() que sao os metodos de promise
