@@ -1,0 +1,36 @@
+.sei{
+    width: 400px;
+}
+p{
+    color:red;
+    background-color: black;
+    font-size: 21px;
+    font-style: italic;
+    direction: ltr;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: underline;
+    text-indent:30px;
+    text-shadow: 2px 2px 4px green;
+    text-transform: uppercase;
+}
+/*color e para cor do texto e background-color e para cor do fundo, o font-size e para o tamanho da font do conteudo, e font style e o estilo do conteudo
+o direction e a direçao que o texto começa e ltr e para left ate rigth ou seja esquerda para direita
+o letter spacing e o espasamento que as caracteres vai ter uma da outra, word spacing e espasamento de cada palavra formada entre uua da outra
+line height e a altura da linha, ja o text align e o alinhamento que oo texto vai ficar,text decoration underline e uma decoraçao de texto e o valor dela e underline ou seja uma linha subLinhada
+text-indent e recuar o texto tipo paragrafo, ja o texto shadow e a sombra do texto e da esquerda pra direita e 2px e do topo ate embaixo e 2px e a cor dele
+podemos passar o 3 valor para o shadow que sera o fumaçamento que e tipo um efeito de fumaça ou seja(1valor e direita pra esquerda, 2 valor e do topo ate embaixo, 3 valor seria fumaçado o tamanho do fumaçamento de fundo)
+text-transform e para transforma o texto em */
+
+
+
+
+
+
+
+
+
+
+

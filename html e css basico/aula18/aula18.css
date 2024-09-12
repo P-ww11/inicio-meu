@@ -1,0 +1,38 @@
+*{
+  margin:0;              /*isso e para que todas as tag nao tenha margin da pagina*/
+  padding: 0;
+}
+.flex-container{
+    display:flex;
+    background-color: red;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    height:80px;
+}
+/*.container {
+    display: flex;               Ativa o Flexbox 
+    flex-direction: row;         Organiza os itens em linha  
+    justify-content: center;     Alinha os itens no centro, horizontalmente 
+    align-items: center;         Alinha os itens no centro, verticalmente 
+  }
+  
+  .item {
+    flex-grow: 1;                Faz com que todos os itens cresçam igualmente 
+  }
+  
+no padrao do display flex ele ja vem com    cflex-direction: row;: Organiza os itens filhos do container em uma linha horizontal (da esquerda para a direita por padrão).
+justify-content: flex-start;: Alinha os itens no início do container, na direção principal (horizontalmente, no caso de row).
+align-items: stretch;: Faz com que os itens filhos ocupem toda a altura do container (esticam verticalmente) se possível.
+
+O Flexbox é uma ferramenta de CSS que facilita a organização e alinhamento de elementos dentro de um contêiner. Vamos entender o básico de forma simples:
+
+Container flexível: Ao definir display: flex, o contêiner passa a organizar seus itens de forma mais eficiente.
+
+Direção dos itens: Com flex-direction, você escolhe se os itens serão organizados em linha (row) ou coluna (column).
+
+Alinhamento:
+
+justify-content: Controla o alinhamento horizontal (eixo principal). Exemplos: flex-start (início), center (centro).
+align-items: Controla o alinhamento vertical (eixo cruzado). Exemplos: stretch (preencher), center (centralizado).
+Espaçamento: O Flexbox ajusta automaticamente os espaços entre os itens */

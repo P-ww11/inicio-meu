@@ -1,0 +1,63 @@
+.bolso{
+    transition: all 1s ease-in-out;
+}
+.bolso:hover {
+    color: blue;
+}
+a:active{
+    color:orange;
+    text-decoration:none
+}
+input:focus{
+    box-shadow: 0 0 5px yellowgreen
+}
+input:disabled{
+    background-color: pink;
+    cursor: not-allowed;
+}
+input:checked + p{
+    width: 50px;
+    height: 50px;
+    color: blueviolet;
+}
+.pai .lista li:first-child {
+    color: red;
+}
+p:not(.not){
+    color:blue
+}
+.nth-child ul li:nth-child(even){
+    background-color: brown;
+}
+.pseudo-elementos p::after{
+    content: "=";
+}
+.placeholder::placeholder{
+    color: violet;
+}
+/*<!--chamaremos a classe normal no css e a pseudo sera utilizando o : para entender que aquilo e pseudo class tipo(.ola:)
+<!--.ola:hover e quando passar um cursor(mouse) no elemento que tenha essa class ai nois passamos algo nela no css*/
+/*no transition eu coloquei que a class vai ter transiçao(efeitinho) em tudo(dentro da class) a duraçao(1s) e o tipo de efeito 
+/*no link podemos alterar e usar pseudo class nele que seria links que foram visitados e links que nao foram visitados que seria
+  a:visited para links visitados
+  a:link para links nao visitados */
+/*o text-decoration e para nao ter decoraçao no texto ou seja nao tenha decoraçao no link*/
+/* o active e para mostra que o texto esta clicado ou ativado ou seja ele vai estar com uma cor padrao e quando clicar ou segurar ele vai estar com um valor diferente(pode ser color ou qlquer coisa)*/
+/*quando o input estiver em foco ou simplificando (clicado) ele ira ter a propriedade box shadow que e um atalho
+e o input disabled e para quando ele estiver disabilitado nois passamos uma propriedade para ele e a outra propriedade cursor not allowed e para
+quando o cursor passar pelo esse imput ele dar um sinal de proibido*/
+/*quando o input esta marcado o <p> ele ira seguir a propriedade que foi colocada*/
+/*para pegar filhos basta colocar fist child e last child para pegar o primeiro e o ultimo elemento de uma classe pai que seria o ul o pai e o li os filho
+/*o uso da pseudo class not e para selecionar as tags menos 1 em expecifica que esteja com uma class determinada
+/* o nth child indica o indice que eu quero passar um atributo que sejam filhos podemos somar somente os pares que seria even(par)
+e odd(impar) que vai passar propriedades para os filhos do indice impar e o nth child(3n) seria de 3 em 3 o indice ja o nth child(3n+5) seria começar do 5 elemento(indice) e dps ir de 3 em 3 
+
+
+/*agr pseudo elemento vamos falar do after(depois) no pseudo elemento nois colocamos content(conteudo) e depois o que queremos para (after ou depois)
+e podemos colocar (befores) que e antes e colocar um conteudo antes*/
+/*e outro pseudo elemento e first-letter que pega apenas o primeiro nome para alterar e first-line e a primeira linha do codigo
+e outro e o selection que e literalmente o que nois seleciona (antes de copiar e colar pelo mouse nois seleciona o objeto ou frase e aperta o botao direito para copiar) isso que seria selecionar
+/*podemos alterar tmb o pseudo elemento do placeholder que e do input de aparecer um textinho antes de digitar algo
+
+
+

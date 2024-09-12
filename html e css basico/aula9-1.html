@@ -1,0 +1,104 @@
+<!--formularios com inputs parte 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <style>
+        label{
+            cursor: pointer;
+        }
+ 
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>cadastro de usuario</p>
+        <p>
+            <label for="nome"> nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="digite seu nome">
+        </p>
+        <p>
+            <label for="sobrenome">seu sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="digite seu sobrenome">
+        </p>
+        <p>
+            <label for="gmail">digite seu email</label>
+            <input type="email" id="gmail" name="email" placeholder="ex: email@gmail.com" required>
+        </p>
+        <p>
+            <h2>dev</h2>
+            <label for="sim">sou um dev:</label>
+            <input type="checkbox" id="sim" name="dev" value="sim">
+            <label for="nao">nao sou um dev:</label>
+            <input type="checkbox" id="nao" name="dev" value="nao">
+        </p>
+        <p>
+            <h2>idade</h2>
+            <label for="menor18">menos de 18</label>
+            <input type="radio" id="menor18" name="idade">
+            <label fpr ="maior18">maior de 18</label>
+            <input type="radio" id="maior18" name="idade">
+        </p>
+        <p>
+        <label for="idade">que idade voce nasceu</label>
+        <input type="date" id="idade" name="idade">
+        <label for="time">que horas voce nasceu</label>
+        <input type="time" id="time" name="horario">
+        </p>
+        <p>
+            <label for="foto">mostra um arquivo da sua foto</label>
+            <input type="file" id="foto" name="foto" accept=".png,image/*">
+        </p>
+        <p> 
+            <label for="cor">qual e sua cor favorita</label>
+            <input type="color" id="cor" name="cor-favorita">
+        </p>
+        <p>
+            <label for="numero">digite um numero</label>
+            <input type="number" id="numero" name="numero" min="1" max="10" step="2">
+        </p>
+            <P>
+                <label for="seleçao">escolhe uma opçao</label>
+                <select id="seleçao" name="opçoes">
+                    <optgroup label="seleçao 1">
+                        <option value="qual" label="nenhum" selected></option>
+                        <option value="13" label="lula"></option>
+                        <option value="22" label="bolsonaro"></option>
+                    </optgroup>
+                    <optgroup label="seleçao 2">
+                        <option value="qual" label="nenhum" selected></option>
+                        <option value="13" label="lula"></option>
+                        <option value="22" label="bolsonaro"></option>
+                    </optgroup>
+                </select>
+            </P>
+            <button type="submit">enviar</button> <br>
+            <button type="reset">resetar </button><br>
+        </p>
+        
+    </form>
+
+</body>
+</html>
+<!--criamos um paragrafo de um input do tipo texto que tem 4 atributos o tipo dele, o id para identificar o input, e o name que e mais usado
+no banco de dados que vai registrar que esse input armazenara o name, e o placeholder que e uma descriçao dentro do input do que fazer-->
+<!--value seria o valor do input nois podemos fazer assim deixar o valor chegar no servidor ou altera-lo-->
+<!--disable no atributo e que o usuario nao consegue interagir com o input ja o readonly o input esta interagivel mas n consegue passar valor para ele-->
+<!--o button tem 2 tipos, submite de enviar, reset que e para resetar e ja que esta dentro do form ele resetara o formulario-->
+<!--O display: block faz com que o elemento se comporta como um bloco que ocupa toda a largura disponível e empurra o próximo conteúdo para uma nova linha, permitindo uma organização vertical na página.-->
+<!--<label>em HTML é usada para criar rótulos para elementos de formulário, como campos de entrada (-->
+<!--o cursor point e para mostr que e clicavel e esta dentro do label e o label e para o input por isso colocamos o id dele-->
+<!--no input de gmail ele vai ser do tipo gmail com @ e etc e no input de checkbox ele vai ser um input de escolha e o valor ele vai ser sim e cheked ou seja ele ja vai ser clicado com o valor sim
+e isso vai aparecer la no banco de dados, e o atributo required e para quando nao tiver valor e a pessoa tentar enviar ele vai falar que o campo e necessario -->
+<!--um tambem de input do tipo escolha e o radio que ele nao deixa multiplas escolhas-->
+<!--no files o aceppt siginifica que esse arquivo so aceita input de png ou se quiser outros e so colocar virgura e se quiser
+algo em geral tipo apenas imagens e so colocar image/* e tambem vem junto o atributo multiple que seleciona mais de um arquivo-->
+<!--no select e um elemento de opçoes e na tag option sao as opçoes que podemos colocar e o valor real esta no atributo value e a que o usuario podera ver estara no atributo label
+, para escolher uma opçao que queria selecionar primeiro colocamos o atributo selected e tambem pode usar disabled para que a pessoa nao possa selecionar esta opçao
+podemos fazer tambem opçoes em grupos com essa tag <optgroup> e o atributo label que sera o nome para criar rotulo de elemento-->
+<!--dentro do elemento select podemos colocar multiple para fazer multiplas escolhas de opçao de seçao ou so de opçoes mesmo-->
+
+
+

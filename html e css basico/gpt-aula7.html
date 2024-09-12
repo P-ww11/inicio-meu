@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      margin: 20px;
+    }
+
+    .one-alt {
+      margin: 0 auto;
+      padding: 15px;
+      width: 800px;
+      background-color: red;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 8px;
+    }
+
+    .one-alt li {
+      list-style: none;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    .one-alt a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .one-alt li:hover {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+    }
+
+    ol {
+      padding-left: 20px;
+      margin: 20px 0;
+    }
+
+    .two-alt {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    dl dt {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    dl dd {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="one-alt">
+      <li><a href="#">Lista</a></li>
+      <li><a href="#">Não Ordenada</a></li>
+      <li><a href="#">Marcadores</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <ol>
+      <li>Lista</li>
+      <li>Ordenada</li>
+      <li>Números Ordenados</li>
+    </ol>
+  </nav>
+
+  <nav class="two-alt">
+    <dl>
+      <dt><a href="#">Lista de Descrição</a></dt>
+      <dd>Essa é a descrição do item acima.</dd>
+      <dt>Elemento DT</dt>
+      <dd>Descrição correspondente ao elemento DT.</dd>
+    </dl>
+  </nav>
+</body>
+
+</html>

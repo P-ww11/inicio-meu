@@ -1,0 +1,60 @@
+.nao{
+    display: inline-block;       /*aqui eu defini que as div no geral vao ser em linha e em blocos isso significa que nao vai deixar espaços do lado faltando*/
+} 
+.nao .sim{
+    background: #ff0000;
+    width: 230px;
+    height: 220px;             /*aqui eu ja coloquei que as filhas da div vai possuir um background e uma altura e largura igual quadrado e vai flutuar para esquerda(mesma coisa que em linha)*/
+    float: left;
+}
+#home{
+    padding-top: 60px;       /*aqui tinha problema pois a div estava dentro da nav(como se a nav tivesse em segunda camada) ai defini que vai ser long do top pois a nav estava no top*/
+ 
+}
+body{
+    font-family: sans-serif;      /*todo elemento do body vai ter a font sans serif*/
+}
+.menu{
+    position:fixed;             /*eu defini que a nav vai ser posiçao fixa que mesmo scrollando ela permaneça defini a largura 100% com a altura 60px ou seja vai ocupar um pequeno espaço na tela e vai seguir aonde vc estiver na pagina*/
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.895); /*aqui defini a cor e o margin-top e pq ela estava mt longe do topo da pagina sobrando espaço*/
+    margin-top: -10px;
+}
+.menu ul{
+    list-style: none;     /*aqui eu defini que a o ul(definir uma lista) nao vai possuir estilo e o display dela vai ser flex facilitando o alinhamento e a distribuiçao dentro*/
+    display: flex;         /*defini o preenchimento de 15 a margin do top de 3 e o max-width que a largura so vai ate 1200px*/
+    padding: 15px; 
+    margin-top: 3px;
+    max-width: 1200px;
+}
+html{
+    scroll-behavior: smooth;       /*aqui o comportamento do scroll do html vai ser suave*/
+}
+.menu nav ul li{
+    float: left;            /*as listas dentro da ul vai flutuar para direita*/
+}
+.menu ul li a{
+    display:block;            /*os conteudo de link dentro das listas vai ser um bloco com cor aliceblue o preenchimento vai ser 10*/
+    color: aliceblue;   /*o text decoration none e para nao ter decoraçao pois no html ele e um link, o transition e a transition de todos o tepo da transiçao e o formato da transiçao */
+    padding: 10px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    margin-left: 70px;
+    
+}
+.menu ul li a:hover{
+    background:rgba(107, 95, 95, 0.497)     /*hover e um pseudo elemento que ao passar o mouse ou clicar nessa liista e no conteudo dela (vai acontecer algo no nosso caso vai mudar o background*/
+}
+.full-page{
+    max-width: 100%;
+    padding: 30px;           /*o max do full-page(seçao) vai ocupar 100% de largura dessa seçao o preenchimento vai ser 30px e 73px longe do topo*/
+    padding-top: 73px;     /*a altura vai ser 700px a partir dessa seçao e a cor de fundo vai ser roxo*/
+    height: 700px;
+    background: purple;
+}
+.page-content{
+    margin-left: 30px;    /*a div dentro da seçao tem a class page-content e a margin left e para que a margin da direita tenha 30px*/
+    font-size: 10px;    /*e o estilo da fonte dos conteudo seja de 10px*/
+
+}

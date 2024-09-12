@@ -1,0 +1,100 @@
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divs</title>
+</head>
+<body>
+    <div style="width:120px; height:60px; background-color: blue;"></div>
+    <div style="width:320px; height: 100px; background: purple; "></div>
+</body>
+</html>
+-->
+<!--passamos para uma div um css com largura e altura e basicamente se fosse so isso ia ser um bloco com nada dentro mas ai passamos o background que definiu que esse bloco ia ser azul-->
+<!-- podemos colocar divs em cima de outra div(isso sempre acontece em sites um caixas em cima de outras caixas que contem informaçoes ou login do usuario)-->
+<!--vamos colocar em pratica uma div em cima da outra-->
+<!--vamos pegar referencia do site da netflix-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>painel</title>
+   <style>
+    *{
+    margin: 0; 
+    padding: 0;
+    }
+    #lembrete{
+        display:flex;                    
+        background: rgba(255, 0, 0, 0.712);
+        text-transform: uppercase;
+        justify-content: space-between;
+    }
+    #lembrete h1{
+    color: aliceblue; 
+}
+  body{
+    background-image:url(https://s3.amazonaws.com/prod-cdata-secure.sprinklr.com/DAM/3877/24737d83-468d-4a04-859f-7df4b95df217-1390968249/what_is_netflix_1_en.png?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQCHXbRzDzSqWHQfjH4xgpNCBkeejhbTPBh0luyHQrJtSQIhAKYJzOJ6cNH4zJ6xGkpiXLHs0pBFY0Jcqd8hq6W9ywmYKroFCPL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMODY5MzY3NDcxNjc0IgyKVlXt8NEQhsxbRdoqjgUJ5r5i02sVCjMHbSdaIGcR0QWufCNnPGoy%2FF1mWLDEAj9%2BPEhwuvvgkWhoDA%2F1QvWPfmSXIWAOSLt%2Bkq%2FZj2Qrtw4FWoTBdZcxgVHksMe1UADFd2LB3xnxB7WBnjqqBGtps9JCcL94iNOFiVE5hi6E%2BuH%2FkQuYc5z8gRvrFwcA8hsyedoHllHAMbcgWEBerxRLJZxo2zIJovXmTcuD%2Fw06TSp03VsnA%2F721ymEzwkk2WTSsfgE%2FfD4yTc2DSMFZ1n3YvI10o9JJRQ5S%2BY0SGvpFyHDfkspdabJeeqw7HF1SGwGxjQXFpolcFoDMBSPJdWH%2B3v6PPuRtNf%2F5AgM7PnrPgEznEiefyFze8xZbHSaFoWa7LXw%2FqSmWVkB94qmE51TClJzI7wAFn9O0PyC1pXxPrN4mhLa55nqbSKNyznMZqJZME3JWbhlRCcplWSCYsv3n6e6KtedmHK722MoA6e3uFb6rnQH%2FNieoKhgsK0QtLqrpdbWc8QkIAk1d9yNsDGSZIdy0XdLXIrPSOVc165kRO8piMBoq%2BhcIZx%2Bz1iQ26Sq0iDvIrq8KFIn7YmK4mausrlICWwlq5RZcYkEIfNm8GRd6Vo4R1LCpssGwY4b%2B5xM%2BGEwhuUWB7iC4qq0dIqayAurSE%2BPriQkXGZdj3rj2THqbk9fU%2BPIabATIoS5cN%2FFuP87CmpCJG9blKA71XeQWu9VD6MKics6XSyUQLSGLoykDMNd8dAc3VKJeHfiUvYW9cKLG%2BbHdaiJVWGKrm%2BghdFj1Kdcgb%2Baxap2BiQ9mPvckHueE1TFod9WIIolAQH3xc2SFCG2HYeASq5QJZX5EztUZSmcz%2BZeme1%2FFAh%2Bw2tXHED6YmWNDsyvXDwwvvKytgY6sAEJPfshn4INGhAD8AiE8wSkmq4XJs5szpMwJU9SYuGlsu5KtpSpJu3m22wtlZ5QDt9pjsKHlWkk6QXgX54DsgEFcAY4GeOjWZF2W%2BDvOlBmO12fp1BTB8JL2XDllXdEeT49d24vT3I5Tr9GFE9W%2BRCScEPZH%2FLZL%2BKakl3Ywtxpe0rCF7iLDKiJbvcIy9fvQaAbFz3ClOiH0N9Sqeic6d9MebD17VnMIWR526SUqSDfYQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240826T183927Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Credential=ASIA4U2SW3Y5KRGBHFVS%2F20240826%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=38afe32c3b337385f12fdf1d59327d698ad0b0833f499f9bb17177cb119854d1);
+    background-size: cover;
+    background-position: top center;
+  }
+   </style>
+</head>
+<body>
+    <header id="lembrete">
+        <h1>netflix</h1>
+        <h2>login user</h2>
+    </header>
+    <h2>oi</h2>
+</body>
+</html>
+<!--como vamos copiar igual o site da netflix precisamos criar uma caixa que tem esse titulo importante-->
+<!--margin: Espaço externo ao redor de um elemento, criando distância entre ele e outros elementos.
+padding: Espaço interno entre o conteúdo de um elemento e sua borda, criando uma área acolchoada dentro do próprio elemento.-->
+<!--o uso dd * no style e para selecionar todos os elementos nao importando o id ou class-->
+<!--(font-size)define o tamanho do texto por pixel de altura, tambem podemos chamar os identificadores pelo nome mas se querer expecificar algo dentro do header seria 
+#lembrete <P>(exemplo) coloca o elemento que queria altuterar-->
+<!--na linha 35 nois transformamos o texto em upercase(letra maiuscula)nesse casso o header inteiro foi alterado-->
+<!-- na linha 38 temos que falar oque vamos alterar nao pode ser so header pq o texto nao esta no todo no header e sim no h1-->
+
+<!--se eu colocar padding top sera o enchimento ate o topo -->
+<!--na linha 36 o margin top ele empurra e como eu defini o top ele vai ser maior entao mais longe do topo -->
+<!--(padding left ele move o texto de acordo com o limite do margin e o padding bottom ele desce o espaço para baixo)-->
+ 
+<!--PONTO IMPORTANTE, eu posso colocar padding:15px 0 0 50px;-->
+<!--o topo seria o 15
+o zero seria direita(posiçao)
+o outro zero seria embaixo 
+a esquerda seria o 50px                   muito mais facil doq ficar colocando padding top,bottom,left-->
+
+
+<!-- display: flex facilita o alinhamento e a organização de elementos dentro de um contêiner que seria o header-->
+<!--justify-content: center  Coloca os itens no meio, da esquerda para a direita.-->
+<!--justify-content: space-between ele coloca os item separado em cada canto-->
+
+
+<!--nois colocamos body pq e um elemento css pois nois vai usar css no body por isso esta dentro do style-->
+<!--nois definimos o background (fundo) como imagem e passamos a url da nossa imagem(pode ser arquivo)-->
+<!--depois colocamos background-size (tamanho do fundo) como cover( se ajustar ao tamanho da tela(cobrir))-->
+<!-- o background-position definimos ele como top e center que ele vai posicionar no topo e no centro da tela-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

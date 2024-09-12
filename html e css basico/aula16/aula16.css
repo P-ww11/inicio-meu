@@ -1,0 +1,37 @@
+*{
+   margin:0;              /*isso e para que todas as tag nao tenha margin da pagina*/
+   padding: 0;
+}
+.pai{
+   display:inline-block;
+}
+ .filhas{
+    background-color: red;
+    width: 230px;
+    height: 130px;
+    float: left;
+    margin: 5px;
+ }
+ @media all and (max-width:400px){
+    .filhas{
+        width:600px
+
+    }
+ }
+ @media all and (min-width:401px) and (max-width: 702px){
+    .filhas{
+        width:300px;
+       height: 300px;
+    }
+ }
+ /*o media sso sera ativado quando a condiçao que estiver dentro do () for verdadeira ai ele executara o {} que seria mesma coisa que if
+/*o all seria para todos os dispositivos e and seria mais uma condiçao
+
+
+
+
+
+
+
+
+

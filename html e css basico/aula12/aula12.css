@@ -1,0 +1,8 @@
+/*a tag id tem maior expecificade e assim vai do maior para o menor de ordem decrescente de especifidade
+
+    ID          CLASS, ATRIBUTOS PSEUDO-CLASS              ELEMENTOS,PSEUDO ELEMENTOS
+    1                  0                                             0
+    #oi {
+        color:pink
+    }
+exemplo de expecificade no seletor oi*/

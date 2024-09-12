@@ -1,0 +1,35 @@
+*{
+    margin:0;              /*isso e para que todas as tag nao tenha margin da pagina*/
+    padding: 0;
+}
+.pai .filha-1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 150px;
+}
+.pai{
+    margin-left: 400px;
+}
+.pai .filha-2{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 110px 110px 40px 40px;
+    box-shadow: 10px 0 0 0 blue  /*no box shadow tem 4 argumentos e a cor*/
+} /*ou seja 1=esquerda superior,2=direita superior,3=esquerda inferior,4= direita inferior*/
+/*o primeiro argumento e top-left o segundo e top-right o terceiro e bottom left e o quarto e bottom right*/
+
+/* os argumento do box shadow sao o 1=direita se o numero for positivo+0px , e para colocar na esquerda e so colocar negativo -1px
+no argumento 2= sao de baixo(bottom) para numero positivo +0px e de cima(top)para nueros negativos -1px
+
+Os argumentos do box-shadow em CSS são, na seguinte ordem:
+
+Offset-x: A distância horizontal da sombra (positiva para a direita, negativa para a esquerda).
+Offset-y: A distância vertical da sombra (positiva para baixo, negativa para cima).
+Blur radius (opcional): Aumenta o desfoque da sombra (quanto maior, mais suave).
+Spread radius (opcional): Expande ou contrai o tamanho da sombra.
+Color: A cor da sombra (pode ser definida por valores como rgb, rgba ou hexadecimais).*/
+
+
+

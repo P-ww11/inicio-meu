@@ -1,0 +1,22 @@
+*{
+    margin:0;              /*isso e para que todas as tag nao tenha margin da pagina*/
+    padding: 0;
+}
+.doi{
+    display:flex
+}
+.doi .nao{
+    display:flex;
+    flex-direction: column;    /*temm como colocar uma flex dentro de outra flex e ela vai flexionar a direçao para colunas*/
+    background-color: blue;
+    margin:15px;
+    padding: 30px;
+}
+.galeria{
+    display: flex;
+}
+.galeria .imagem{
+    width:100%;
+    height: 200px;
+    background-color: blueviolet;
+}

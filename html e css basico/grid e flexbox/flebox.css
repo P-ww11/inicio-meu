@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;                 /*aqui eu tirei a mmargin e o preenchimento o estilo de lista de todos elemento e deixei uma font */
+    list-style: none;
+    font-family:sans-serif;
+}
+a{
+    text-decoration:none;
+    color:purple;
+    display: block;
+    padding: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;      /*justificar que o conteudo vai ter um espaço between(entre) conteudo*/
+    padding: 20px;
+    align-items: center;          /*isso e para alinhar os items no centro */
+    background-color:black;
+   
+}
+.header a:hover{
+    background-color: rgba(0, 128, 0, 0.458)
+}
+.menu{
+    display: flex; 
+}
+.menu li {
+    margin-left: 20px;     /*definimos que os conteudo do li vai ter marge para que nao fica grudado*/
+}
+h1 {
+    text-align: center;
+    margin-top: 100px;      /*alinhamos o h1 para o centro e ficar longe do topo do site*/
+} 
+img {
+    max-width:100%
+}
+/*css flexbox 1*/
+.flex{
+    display: flex; 
+    flex-wrap: wrap;      /* flex-wrap: wrap; Deixa os itens quebrarem e se distribuírem em várias linhas */
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.flex div{          /*atalho flex que combina grow, shrink e basis*/ 
+    flex: 1 1 300px;
+    margin: 10px
+}
+/*no atalho flex grow é Controla quanto o item pode crescer em relação aos outros itens, flex shrink é Controla o quanto o item pode encolher
+e o flex basis Define o tamanho inicial do item antes de ele crescer ou encolher.
+no caso o grow 1 O item vai crescer para preencher o espaço disponíve,  no caso o shrink 1 O item não vai encolher, mesmo se faltar espaço,  o basis 200px Tamanho inicial definido em pixels*/
+/*margin: 0 auto; centraliza horizontalmente um elemento com largura fixa distribuindo da esquerda e direita igualmente, ajustando automaticamente as margens laterais e deixando as verticais a 0.
+  
+  /*css grid*/
+ .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 780px;
+    margin: 0 auto;
+    grid-gap: 20px;     /*espaços de 20px entre linhas e colunas*/
+ }
+ .grid div:nth-child(n + 4){   /*a partir da 4 filha(contando com ele)eu vou mudar*/
+    display: grid;           /*eu fiz com que as div a partir do 4 começa a ser grid(grades) e que seja em colunas horizontal 1fr 1fr ou seja que tenha 2 espaçamento a foto e o paragrafo em colunas*/
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;  /*aqui eu fiz com q as grid tenha espaçamento de 10px e se alinha ao centro os items*/
+    align-items: center;
+ }
+  #anuncio  {
+    grid-column: 1;    /*o anuncio vai estar na primeira coluna da grid e vai ocupar a linha 2 ate 5 e vai ser um block*/
+    grid-row: 2/5;
+    display: block;
+    border-top: 9px solid blue;
+ }
+
+ @media (max-width:600px ){  /*se a largura for menor que 600 ele executara 1fr 1fr que e 2 gride inves de 3 ou outro*/
+  .grid{
+    grid-template-columns: 1fr 1fr;
+}
+ }
+ /*fr significa unidade fracional ela e 100% se colocar 2 fr ela fica 50% se colocar 3 fr ela fica 33.33% ela vai se dividindo na metade
+ ela vai ficando como coluna de acordo com quantos fr tem, se tiver 4 vai ser 4 colunas de 25% cada*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+ .ola{
+    background-color: red;
+    width:300px;
+    max-width: 600px;
+    max-height: 800px;
+    height:100px;
+    overflow-y: scroll;
+ }
+ /*se caso o conteudo da div passar e sobrar do bloco entao vms usar overflow que e o conteudo transbordado o eixo dele que x e horizontal(-) e y vertical(|)
+ e passar scroll como valor na vertical para rolarmos o conteudo tmb podemos colocar overflow auto para pq ele automatiza o conteudo se transborda e nao afetando todos pois colocar overflow-y:scroll ele vai
+ fazer para todo conteudo da div*/
+ /*as propriedades de mudança no conteudo sao width e heigth pas podemos passar max-width e max-height pois e a altura maxima permitida e entao se o conteudo estiver no celular ele vai ser grande e a partir
+ do valor que passarmos pro max-... ele vai atingir o pico e nao aumentar mais*/
+
+.grid .sim{
+    
+    background-color: purple;
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    float:left
+}
+/* inline block e linha so que com blocos e float left e para que ele completa os espaços que estao sobrando para direita ou seja ele vai flutuar para espaços nao ocupado*/
+/*se caso o conteudo tiver na sobrinha do float basta usar a tag clear:left para que nao tenha nada na direita e que o conteudo e forçado a descer
+no caso da sobrinha e pq cada div e um bloquinho e eles possui uma margin entao a margin nao se sobrepoe no outro no float e tipo >< eles n se junta ja no display inline-block ele vai se juntar se sobrepondo a marge ou seja >< so q um dentro do outro
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

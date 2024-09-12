@@ -1,0 +1,78 @@
+<!--vamos falar de listas e menus em HTML que serve para agrupar itens relacionado a lista-->
+<!--existe 3 tipos de lista -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>listas</title>
+</head>
+<style>
+  .two-alt{
+    background-color:rgba(0,0,0,0.5);
+    display:flex;
+  }
+  .one-alt{
+   margin-left: 300px;
+    width: 800px;
+    height:100px;
+    background-color:rgba(0,0,0,0.7);
+    display:block;
+    background:red;
+    display:flex;
+    justify-content:center;
+    justify-content: space-evenly;
+}
+.one-alt li{
+    display:flex;
+    text-decoration: none;
+    list-style:none;
+    align-items:center;
+    text-transform:uppercase;
+    
+   }
+   .one-alt li:hover{
+     background:rgba(0,0,0,0.3);
+   }
+</style>
+<body>
+  <nav>
+    <ul class="one-alt">
+      <li><a href="#">lista</a></li>
+      <li><a href="#">nao ordenada</a></li>
+      <li><a href="#">que sao colocadas como ponto de marcadores</a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ol type="">
+      <li>lista</li>
+      <li>ordenada </li>
+      <li>que sao colocadas como numero ordenado mesmo de acordo com o atributo que colocar</li>
+    </ol>
+  </nav>
+  <nav class="two-alt">
+    <dl>
+      <dt><a href="#">essa e uma lista de descrição</a> </dt>
+      <dd>essa e a descrição do documento acima</dd>
+      <dt>e para cada conteudo no elemento dt</dt>
+      <dd>vai possuir sua descrição dd </dd>
+    </dl>
+  </nav>
+</body>
+
+</html>
+
+<!--lista nao ordenada começa com <ul> e possui corpo que fecha com </ul> e as lista começa com <li> que e o item da lista e se quiser pode colocar corpo no <li>-->
+
+<!--lista ordenada comeca com <ol> e tmb possui corpo e as litas tmb comeca com <li> e na lista ordenada possui um atributo type="" e se quiser tmb start por onde vai começar a lista -->
+
+<!--lista de descrição começa tag de inciamento de lista <dl> e o conteudo dessa lista <dt> e a descricao desse conteudo <dd>-->
+<!--e se tiver decoração no texto(aquelas listinha em baixo de link) basta colocar text-decoration: none-->
+<!--o rgba e meio que uma sigla pra latencia de red green blue e alfa que alfa e transparencia da cor-->
+
+<!--o uso da display flex e do list-style: display e para mostrar e foi inserido na class entao e para mostra a list e por padrão ela vem alinhamento em forma de coluna e o flex e um atributo que vai alinhar e sair da forma de coluna, ja o list-style e o estilo da linha que na ul e a marcação (pontinho) e o none e para que nao tenha iso-->
+<!--a tag align-items vai alinhar os items de acordo com sua altura do elemento(caixa) e voce passa um atributo para ela aonde vai colocar-->
+<!--nk display block eu coloquei pois eu tornei a lista em em bloco e ele vai se ajustar de acordo com o tamanhk da nav e se a nave for pequena k display block vai fazer com que a nave cresça ele vai empurrar todo o elemento que ele estiver usando pra longe-->
+<!--nois tivemos que colocar hover que ao passar o mouse acontece um evento e definimos isso na tag li pois e um elemento-->
+

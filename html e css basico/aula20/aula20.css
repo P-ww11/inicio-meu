@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px , 400px));
+    gap: 20px;
+    
+    /* grid-template-rows: 40px 10px;*/
+}
+.grid div{
+    background-color: blue;
+    min-height: 100px;
+}
+.grid div:nth-child(7){
+    grid-row: span 2;  
+    grid-column: span 3;   /*aqui fizemos o grid pegamos a grade de linha(row) e colocamos o valor span 2 quer dizer que a 7 linha vai ocupar 2 linha a frente*/
+}                         /*ja no column ele vai ocupar 3 grade de coluna abaixo da linha numero 7 que escolhemos*/
+
+/*grid e grade entao temos que configurar linhas e colunas*/
+/*para grid-templete-collums e a configuração das colunas da grid(grade)para primeira coluna, 2 coluna .... e so dar espaço*/
+/*gap seria um espaçamento entre a grid*/
+/*tem o valor repeat que repete e no primeiro argumento e quantas vezes e no segundo oque vai se repetir, tammbem podemos fazer min e max como argumento na repeat
+e tambem podemos deixar auto inves de passar quantas vezes a grid*/
+/*tambem podemos trabalhar nas linhas que e o grid-template-rows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

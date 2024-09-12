@@ -1,0 +1,79 @@
+<!--o elemento html na verdade ou e tudo retangulo ou quadrado mas tudo e sempre caixas,podendo fazer caixas de diversas maneiras como redonda etc-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        .primeira-div{
+            background:pink;
+            width: 300px;
+            height:200px;
+            border-bottom-width: 30px;
+            border-bottom-color:red;
+            border-bottom-style: solid;
+        }
+            .segunda-div{
+            border:10px solid black;
+         width: 300px;
+         height: -200px;
+         background-image:url(data:image/png;base64,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);
+        background-position: center center;
+        }
+        .third-div{
+            width: 300px;
+            height: 200px;
+            background-color: tan;
+            border-bottom-width:40px;
+            border-bottom-style: solid;
+            border-top-color: green;
+            border-left-color: green;
+            border-right-color: green;
+            border-bottom-color: green;
+            border-style:solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="primeira-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laboriosam ut, iure quibusdam, inventore facilis, aperiam assumenda dolorem non explicabo officiis animi nisi error. Reprehenderit quisquam magni tempora enim aliquam!</div>
+    <div class="segunda-div">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, sint aspernatur a beatae blanditiis alias eum at unde temporibus maxime vel non eligendi vitae, odit ut incidunt aliquid inventore omnis.</div>
+   <div class="third-div">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vel rem. Neque, repudiandae necessitatibus nemo reiciendis nihil doloribus alias repellat dolor saepe quisquam quaerat ad. Ipsam hic vero nam ipsum.</div>
+</body>
+</html>
+<!--criamos uma div para entender box-model pois esta presente nas caixas que sao html-->
+<!--No style a border e um atalho o primeiro arguemnto sera o tamanho da borda,
+ o segundo argumento sera solid que e uma linha direta e o terceiro e a cor-->
+ <!--no box-model tem padding, border,margin
+se coloca width pra definir a largura ele era fixo com o 40 que adcionamos, e se colocarmo a border ele aind ficara 40 pois a border adciona nao altera-->
+
+<!--para a border aparecer sem ser atalho precisa do width(largura) da cor(color) e o tipo(estilo) de border, para uma border aparecer precisa dessas tres propriedades-->
+<!--na box-model a border tem 4 lados e essa bottom e um certa border e se quiser colocar todas as bordas em uma div basta colocar so a border e as propriedades-->
+<!--na div third e todas as bordas separadas-->
+<!--caso eu queria fazer uma seção corpartilhada no style basta eu colocar exemp: .one-div,segundadiv isso e para caso eu faço uma seleção de mudança-->
+<!--no padding tem atalhos como vimos mas no border e no margin tmb tem-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

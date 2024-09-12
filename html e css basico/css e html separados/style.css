@@ -1,0 +1,48 @@
+/*para fazer comentario e usando
+.caixa-css{
+    background: red;
+    width: 120px;    
+    height: 120px;
+} 
+*/
+/*nois n precisamos mais usar a tag style basta colocar o identificador aqui para quando linkarmos para html ele saber qual utilizaremos
+/
+*vamos falar de seletores basico em css*/
+
+/* *{ seleciona todos os elementos da pagina 
+margin: 0;
+padding: 0;       aqui estamos falando que todos seletores vao ter margin 0 e padding 0
+}
+p,h2{
+    color: red;        exemplo de seletores e selecionar oque vai alterar ou colocar um caminho para alterar mas nesses caso  se eu colocar como <p> oque irei alterar ele vai selecionar todas tag que tiver <p>e sempre bom colocar identificadores como: id e class
+}    
+div{
+    color: initial;
+}                  e podemos fazer mais de um seletor que e simplesmente usando virgula para separar eles*/
+
+  /*na class se chamarmos uma classe que contenha outra dentro dela isso vai ser herança pois e um padrao de div e vai passar pras duas entao temos que expecificar que a div como cor inicial que sera color:initial*/
+/*podemos ter class com outras class em caminho que nem o p,h2 pode ter class multiplas seletoras ou caminho para um determinado conteudo*/
+
+
+
+/*setores de class
+.vermelho {
+  color: #f33;
+}
+
+.amarelo-bg {
+  background: #ffa;
+}
+
+.elegante {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+*/
+
+
+
+
+
+
+

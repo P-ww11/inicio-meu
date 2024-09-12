@@ -1,0 +1,119 @@
+<!--tabelas com linhas e colunas e as seçoes da tag table são thead-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table td,table th{
+            border:1px solid red;
+            padding:10px;
+            text-align: left;
+
+        }
+        table caption{
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+         tfoot td{
+            background: pink;
+            font-style:oblique; 
+        }
+        #smart-acess{
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>oi  </p>
+<div id="smart-acess">
+    <table>
+        <caption>e uma tag de descrição e podemos colocar em tabela</caption>
+        <thead>
+            <tr>
+                <th>essa e uma tabela</th>
+                <th>o th serve como</th>
+                <th>coluna de titulo</th>
+                <th>ola minions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>corpo da</td>
+                <td>coluna de titulo</td>
+                <td>pois ainda sim e uma coluna</td>
+                <td>ola minions</td>
+            </tr>
+            <tr>
+                <td>coluna da</td>
+                <td>tabela e pode</td>
+                <td colspan="2" rowspan="2">linhas ocupando 2 colunas ou mais pois esse colpsan ele retira a coluna e deixa para so uma linha sendo na direçao vertical</td>  
+            </tr>
+            <tr>
+                <td> teste</td>
+                <td>outro teste</td>        
+            </tr>
+         
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>isso e um rodape</td>
+                <td>da tabela, e ainda utiliza</td>
+                <td>o tr e td para rodape</td>
+                <td>ola minions</td>
+            </tr>
+        </tfoot>
+</table>
+</div>
+    
+</body>
+</html>
+
+<!--para criar uma tabela precisa da (table) e o (thead) seria o cabeçalho da tabela e para escrever linhas e colunas, linhas e (tr)ja colunas ou e (dt) ou (th) e o th seria meio que um titulo da thead-->
+<!--no style eu to selecionandoa th e td pois e para identificar que quero modificar as duas em especifico-->
+<!-- border-collapse: collapse; e uma propriedade usada em tabelas que une as bordas das células, eliminando o espaço entre elas.-->
+<!--<th> são geralmente exibidas em negrito e centralizadas, para destacar que são cabeçalhos das colunas ou linhas da tabela.-->
+<!--<tbody> seria o corpo da tabela e tr e a linha e precisa expecificar as colunas e o <td> dentro do corpo da tabela-->
+<!--o width 100% e para pegar a largura completa da tela  e o style da caption e caption-side(posiçao da nossa descriçao que por padrao e top(topo)
+e o text-align que sera aonde o texto vai ficar que coloquei left(esquerda)) -->
+<!--  font-style: italic;   isso e para colocar a fonte em italico
+            font-size: 10px;        o tamanho da fonte ser 10px (menor)
+            margin-bottom: 10px; isso e um espaço para ficar longe da tabela ou resumindo Adiciona espaço abaixo de um elemento..-->
+<!--o colspan serve para ocupar linha em colunas e ja o rowspan serve para linhas ocuparem tanto elas mesma ou coluna-->
+
+
+<!--agora para fazer rolagem que alguem no celular possa ver a tabela inves de toda junta basta colocar a tabela em uma div
+ e colocar um id de altarar depois no style e colocar overflow que e quando um elemento passa do flow normal do conteudo
+  entao vamos colocar a largura maxima da tela- para que a div tenha uma propria largura que possa seguir o flow do conteudo
+ e falar que o overflow dela e automatico , o site fica no flow normal(inalteravel) mas a tabela que tava na div fica no fluxo capaz de seguir o flow de acordo com o tamanho da tabela->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
